@@ -1,6 +1,6 @@
 #include <iostream>
 #include <assert.h>
-#include <colorcoder.h>
+#include "colorcoder.h"
 
 using namespace TelCoColorCoder;
 
