@@ -26,9 +26,9 @@ void testPairToNumber(
 }
 
 void ToString(){
-    for(int pairno= 1; pairno < = 25; pairno++){
-        TelCoColorCoder::ColorPair pair = GetColorFromPairNumber(pairno);
-        std::cout<<"Pair number: "<<pairno<<" "<<"Color Pair: "<<pair.getMajor<<" "<<pair.getMinor<<std::endl;
+    for(int pairno= 1; pairno < 26; pairno++){
+        TelCoColorCoder::ColorPair pair = TelCoColorCoder::GetColorFromPairNumber(pairno);
+        std::cout<<"Pair number: "<<pairno<<" "<<"Color Pair: "<<pair.getMajor()<<" "<<pair.getMinor()<<std::endl;
     }
 }
 
