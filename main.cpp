@@ -31,7 +31,7 @@ void ToString(){
     std::string Result;
     for(int pairno= 1; pairno <= totalCombinations; pairno++){
         TelCoColorCoder::ColorPair pair = TelCoColorCoder::GetColorFromPairNumber(pairno);
-        std::Result += "Pair number: " + pairno + " " + "Color Pair: " + pair.ToString() + '\n';
+        Result += "Pair number: " + std::to_string(pairno) + " " + "Color Pair: " + pair.ToString() + '\n';
         //std::cout<<"Pair number: "<<pairno<<" "<<"Color Pair: "<<pair.ToString()<<std::endl;
     }
     std::cout<<Result;
