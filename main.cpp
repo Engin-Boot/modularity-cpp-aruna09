@@ -28,13 +28,13 @@ void testPairToNumber(
 
 void ToString(){
     int totalCombinations = TelCoColorCoder::numberOfMajorColors * TelCoColorCoder::numberOfMinorColors;
-    string Result;
+    std::string Result;
     for(int pairno= 1; pairno <= totalCombinations; pairno++){
         TelCoColorCoder::ColorPair pair = TelCoColorCoder::GetColorFromPairNumber(pairno);
-        Result += "Pair number: " + pairno + " " + "Color Pair: " + pair.ToString() + '\n';
+        std::Result += "Pair number: " + pairno + " " + "Color Pair: " + pair.ToString() + '\n';
         //std::cout<<"Pair number: "<<pairno<<" "<<"Color Pair: "<<pair.ToString()<<std::endl;
     }
-    cout<<Result;
+    std::cout<<Result;
 }
 
 int main() {
